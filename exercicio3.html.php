@@ -4,15 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Exercicio 1</title>
+    <title>Exercicio 3</title>
 </head>
 <body>
     <h1>Multiplos del 5</h1>
     <?php
-    $limite=100;
-        for ($i=5; $i <= $limite ; $i+=5) { 
+        do {
+            $i=$i+5;
             echo "$i<br>";
-        }
+        } while ($i < 100);
     ?>
 </body>
 </html>
