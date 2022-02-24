@@ -9,8 +9,8 @@
 <body>
     <h1>desde el 360 al 160</h1>
     <?php
+     $i=380;
         do {
-            $i=380;
             $i=$i-20;
             echo "$i<br>";
         } while ($i > 160);
