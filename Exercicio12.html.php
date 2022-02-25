@@ -7,15 +7,16 @@
     <title>Exercicio 1</title>
 </head>
 <body>
-    <h1>Multiplos del 5</h1>
+    <h1>Fibonacci</h1>
     <?php
         $fbcero= 0;
         $fibun = 1;
-        for ($i=2; $i < 500 ; $i++) { 
+        for ($i= 2; $i < 100 ; $i++) { 
             $fibactual=$fbcero + $fbun;
-            echo "$fibactual <br>";
             $fbcero = $fibun;
             $fibun = $fibactual;
+            echo "$fibactual <br>";
+
         }
     ?>
 </body>

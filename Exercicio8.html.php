@@ -16,7 +16,7 @@
         <input type="number" value="numero" name="numero">
         <input type="submit" value="enviar">
 </form>
-<table border="10">
+<table border="1">
 <?php
           $n = $_POST['numero'];
                for ($i=0; $i <= 10 ; $i++) { 
