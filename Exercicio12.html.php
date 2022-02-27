@@ -8,11 +8,18 @@
 </head>
 <body>
     <h1>Fibonacci</h1>
+    
+<form action="<?php echo $_SERVER['PHP_SELF']?>" method="POST">
+    <label for="numero">Escribe el número de términos que quieres que aparezcan de la serie de FIBONACCI</label>
+        <input type="number" name="numero">
+        <input type="submit" value="enviar"><br>
+</form>
     <?php
+     $n = $_POST['numero'];
         $fbcero= 0;
         $fibun = 1;
-        for ($i= 2; $i < 100 ; $i++) { 
-            $fibactual=$fbcero + $fbun;
+        for ($i= 0; $i < $n ; $i++) { 
+            $fibactual=$fbcero + $fibun;
             $fbcero = $fibun;
             $fibun = $fibactual;
             echo "$fibactual <br>";

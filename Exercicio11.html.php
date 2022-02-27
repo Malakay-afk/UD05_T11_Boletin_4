@@ -19,7 +19,7 @@
 <table border="1">
 <?php
           $n = $_POST['numero'];
-               for ($i= $n; $i <= $n + 5 ; $i++) { 
+               for ($i= $n; $i <= $n + 4 ; $i++) { 
                    $cuadrado = $i * $i;
                    $cubo = $i * $i * $i;
                    echo "<tr><td>cuadrado y cubo de: $n</td>";
