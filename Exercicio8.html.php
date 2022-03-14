@@ -16,12 +16,20 @@
         <input type="number" value="numero" name="numero">
         <input type="submit" value="enviar">
 </form>
-<table border="1">
+<table border = "1">
 <?php
           $n = $_POST['numero'];
+          echo "<tr>
+          <td>"."Numero"."</td>
+          <td>"."Solución"."</td>
+          </tr>";
                for ($i=0; $i <= 10 ; $i++) { 
                    $multiplicacion = $n * $i;
-                   echo "<tr><td>"."$multiplicacion <br>"."</tr></td>";
+                   echo "<tr>
+                        <td>"."$n"."</td>
+                        <td>"."$multiplicacion"."</td>
+                        </tr>";
+
                }
 ?>
 </table>
