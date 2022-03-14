@@ -20,16 +20,16 @@
 
     if ($numero < $numero1) {
 
-        $inicio=$numero1;
-        $final=$numero;
-        for ($i=$inicio; $i < $final ; $i=i + 7) { 
-            echo "$i";
+        $inicio=$numero;
+        $final=$numero1;
+        for ($i=$inicio; $i < $final ; $i=$i + 7) { 
+            echo "<p>$i</p>";
         }
 
     }elseif ($numero > $numero1) {
-        $inicio=$numero;
-        $final=$numero1;
-        for ($i=$inicio; $i < $final; $i=i + 7) { 
+        $inicio=$numero1;
+        $final=$numero;
+        for ($i=$inicio; $i < $final; $i=$i + 7) { 
             echo "<p>$i</p>";
         }
 
