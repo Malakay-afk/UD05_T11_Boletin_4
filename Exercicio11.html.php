@@ -13,19 +13,27 @@
 <body> 
 <form action="<?php echo $_SERVER['PHP_SELF']?>" method="POST">
         <label for="numero">Escribe un numero</label>
-        <input type="number" name="numero">
+        <input type="text" name="numero">
         <input type="submit" value="enviar">
+        
 </form>
 <table border="1">
 <?php
-          $n = $_POST['numero'];
-               for ($i= $n; $i <= $n + 4 ; $i++) { 
-                   $cuadrado = $i * $i;
-                   $cubo = $i * $i * $i;
-                   echo "<tr><td>cuadrado y cubo de: $n</td>";
-                   echo "<td>"."$cuadrado <br>"."</td>";
-                   echo "<td>"."$cubo <br>"."</tr></td>";
-               }
+        echo "<th>Opero</th><th>cuadrado</th><th>cubo</th>";
+
+
+    if (!isset($_POST['numero'])) {
+       echo "introduce un número";
+    }else if (filter_var($_POST['numero'],FILTER_VALIDATE_INT)){
+        $n = $_POST['numero'];
+        for ($i=$n; $i < $n + 5 ; $i++) { 
+            $cuadrado = $i * $i;
+            $cubo = $i * $i * $i;
+            echo "<tr><td>cuadrado y cubo de: $n</td>";
+            echo "<td>"."$cuadrado <br>"."</td>";
+            echo "<td>"."$cubo <br>"."</tr></td>";
+    }
+}
 ?>
 </table>
 </body>
