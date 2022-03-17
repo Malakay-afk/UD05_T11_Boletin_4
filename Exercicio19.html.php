@@ -10,10 +10,10 @@
         <form action="<?php echo $_SERVER['PHP_SELF']?>" method="POST">
             <p><input type="text" name="altura"></p>
             <p><select name="seleccion">
-                <option selected value="Sol.png">&#128142;&nbsp;Solana</option>
-                <option value="Ada.png">&#10036;&nbsp;Cardano</option>
-                <option value="Eth.png">&#128181;&nbsp;Ethereum</option>
-                <option value="Bit.png">&#9889;&nbsp;Bitcoin</option>
+                <option selected value="Asterisco.png">&#128142;&nbsp;Solana</option>
+                <option value="cardano.webp">&#10036;&nbsp;Cardano</option>
+                <option value="estrella.jpg">&#128181;&nbsp;Ethereum</option>
+                <option value="Solana_logo.png">&#9889;&nbsp;Bitcoin</option>
                 <option value="Polis.png">&#128304;&nbsp;Polis</option>
             </select></p>
             <p><input type="submit" value="Calcular"></p>

@@ -5,7 +5,7 @@ session_start(); ?>
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <title>Document</title>
 </head>
 <body>
@@ -30,7 +30,7 @@ session_start(); ?>
         }
         if (isset($_REQUEST["N1"]) && $_REQUEST["N1"] % 2!=0) {
             array_push($_SESSION["impares"], $_REQUEST["N1"]);
-         } 
+        } 
     ?>
     
     <form action="Exercicio21.html.php" method="post">
